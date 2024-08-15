@@ -28,7 +28,7 @@ Both of the commands provided above will produce a Serenity test report in the `
 
 * Install Docker
 * Download this repository
-* Enter this repository where file DOCKERFILE y present
+* Enter this repository where the file DOCKERFILE is present
 * Open cmd in this folder
 * Enter the below commands:
   1. docker build -t nombre-imagen .
