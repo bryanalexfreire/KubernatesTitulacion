@@ -27,6 +27,7 @@ Both of the commands provided above will produce a Serenity test report in the `
 ## For run in Docker
 * Install Docker
 * Download this repository
-* Open terminal into this repository
+* Open terminal into this repository where the file DOCKERFILE is present
 * Enter the commands below:
-1.	docker run –rm --mount source=my_volume,target=/opt  --mount type=bind,source=C:\Users\User\.m2,target=/root/.m2   pruebasv4
+1.  docker build -t nombre-imagen .
+3.	docker run –rm --mount source=my_volume,target=/opt --mount type=bind,source=C:\Users\User\.m2,target=/root/.m2 nombre-imagen
