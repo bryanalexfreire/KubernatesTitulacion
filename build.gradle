@@ -19,7 +19,7 @@ ext {
     assertJVersion = '3.23.1'
     lombokVersion = '1.18.24'
     logbackVersion = '1.2.11'
-}
+}gi
 
 dependencies {
     testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
