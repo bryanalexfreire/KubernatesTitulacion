@@ -24,7 +24,7 @@ For GRADLE, pen a command window and run:
 
 Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
 
-## Eject in Docker
+## Ejecute  ect in Docker
 
 * Install Docker
 * Download this repository
