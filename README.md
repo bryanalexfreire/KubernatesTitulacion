@@ -23,3 +23,10 @@ For GRADLE, pen a command window and run:
 ## Viewing the reports
 
 Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+
+## For run in Docker
+* Install Docker
+* Download this repository
+* Open terminal into this repository
+* Enter the commands below:
+1.	docker run –rm --mount source=my_volume,target=/opt  --mount type=bind,source=C:\Users\User\.m2,target=/root/.m2   pruebasv4
