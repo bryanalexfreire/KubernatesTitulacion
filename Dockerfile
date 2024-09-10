@@ -16,9 +16,6 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Configurar el comando por defecto para ejecutar Google Chrome en modo headless + Configurar y arrancar el servidor VNC y Firefox
-CMD ["google-chrome", "--headless", "--no-sandbox", "--disable-gpu", "--remote-debugging-port=9222", "http://example.org","sh", "-c", "xvfb-run --server-args='-screen 0 1024x768x24' firefox http://example.org"]
-
 # Establecer el directorio de trabajo
 WORKDIR /opt/
 
@@ -30,5 +27,8 @@ COPY src/ ./src/
 
 COPY . /opt/
 
-CMD ["./mvnw", "clean", "verify"]
+# Configurar el comando por defecto para ejecutar Google Chrome en modo headless + Configurar y arrancar el servidor VNC y Firefox
+CMD ["google-chrome", "--headless", "--no-sandbox", "--disable-gpu", "--remote-debugging-port=9222", "http://example.org","sh", "-c", "xvfb-run --server-args='-screen 0 1024x768x24' firefox http://example.org", "./mvnw", "clean", "verify"]
+
+
 
