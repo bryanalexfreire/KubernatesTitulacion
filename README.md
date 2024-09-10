@@ -31,6 +31,7 @@ Both of the commands provided above will produce a Serenity test report in the `
 * Enter this repository where the file DOCKERFILE is present
 * Open cmd in this folder
 * Enter the below commands:
-  1. docker build -t nombre-imagen .
-  2. docker run --rm --mount source=my_volume,target=/opt --mount type=bind,source=C:\Users\User\.m2,target=/root/.m2 nombre-imagen
+  1. docker build -t [nombre-imagen] .
+  2. docker run --rm --mount source=my_volume,target=/opt --mount type=bind,source=/c/Users/User/.m2,target=/root/.m2 [nombre-imagen]
+
 
